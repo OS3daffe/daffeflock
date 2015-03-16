@@ -1,0 +1,18 @@
+"version": 1
+"applications":
+  "mongodb":
+    "image": "daffe/mongodb"
+    "ports":
+     - "internal": 27017
+       "external": 27017
+    "volume":
+      "mountpoint": "/data/db"
+  "daffedummy":
+    "image": "daffe/daffedummy"
+    "links":
+     - "local_port": 27017
+       "remote_port": 27017
+       "alias": "flocker--mongodb"
+    "ports": 
+     - "internal": 8080
+       "external": 8080

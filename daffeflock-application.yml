@@ -9,10 +9,12 @@
       "mountpoint": "/data/db"
   "daffedummy":
     "image": "daffe/daffedummy"
+    "environment":
+       "TEST_VARIABLE": "DAFFE1337"
     "links":
      - "local_port": 27017
        "remote_port": 27017
-       "alias": "flocker--mongodb"
-    "ports": 
+       "alias": "mongo"
+    "ports":
      - "internal": 8080
        "external": 8080

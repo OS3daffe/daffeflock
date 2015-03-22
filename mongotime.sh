@@ -6,7 +6,8 @@ do
   x=$((d-t))
   t=$(date +"%s%N")
   r=1
-  if [ $x -gt 200000000 ]
+  # Only when greater then 500 msec and not the first UNIX time round
+  if [ $x -gt 500000000 ] && [ $x -lt 1425432109876543210 ]
   then
     echo $x
   fi
@@ -16,3 +17,4 @@ do
     r=$?
   done
 done
+

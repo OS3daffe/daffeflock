@@ -13,7 +13,7 @@ do
   fi
   until [ $r -eq 0 ]; do
     # mongo 145.100.108.226/daffe --eval "db.dummy.count()" 2> /dev/null > /dev/null
-    mongo 145.100.108.226/daffe --eval "db.dummy.insert({y:1})" 2> /dev/null > /dev/null
+    mongo 145.100.108.227/daffe --eval "db.dummy.insert({y:1})" 2> /dev/null > /dev/null
     r=$?
   done
 done

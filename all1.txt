@@ -1,0 +1,2221 @@
+
+STARTING DAFFE TESTS AT: Sun Mar 22 20:12:56 CET 2015
+
+NOTES:
+- nsec values is database downtime
+- min/sec value is migration duration
+- Application starts and ends at DAFFE1
+
+
+----------------------------------------
+ DATA INCREMENT OF: 2 records (4K)
+
+
+real	0m0.927s
+user	0m0.034s
+sys	0m0.008s
+----------------------------------------
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment2.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+
+real	1m15.214s
+user	0m0.344s
+sys	0m0.154s
+37045425417
+
+MONGODB BYTES DIRECT: 53488
+MONGODB COUNT DIRECT: 946
+MONGODB COUNT HTTP:   946
+MONGODB TIMES HTTP:
+946    time_namelookup:  0.000
+       time_connect:  0.016
+    time_appconnect:  0.000
+   time_pretransfer:  0.016
+      time_redirect:  0.000
+ time_starttransfer:  0.030
+                    ----------
+         time_total:  0.030
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+
+real	1m0.865s
+user	0m0.351s
+sys	0m0.136s
+51333674888
+1301351385
+
+MONGODB BYTES DIRECT: 75296
+MONGODB COUNT DIRECT: 1400
+MONGODB COUNT HTTP:   1400
+MONGODB TIMES HTTP:
+1400    time_namelookup:  0.000
+       time_connect:  0.030
+    time_appconnect:  0.000
+   time_pretransfer:  0.030
+      time_redirect:  0.000
+ time_starttransfer:  0.069
+                    ----------
+         time_total:  0.069
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+
+real	1m20.714s
+user	0m0.344s
+sys	0m0.112s
+71638648441
+
+MONGODB BYTES DIRECT: 86864
+MONGODB COUNT DIRECT: 1641
+MONGODB COUNT HTTP:   1641
+MONGODB TIMES HTTP:
+1641    time_namelookup:  0.000
+       time_connect:  0.105
+    time_appconnect:  0.000
+   time_pretransfer:  0.105
+      time_redirect:  0.000
+ time_starttransfer:  0.359
+                    ----------
+         time_total:  0.359
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+590071779
+525011851
+523830348
+520972671
+
+real	1m6.622s
+user	0m0.411s
+sys	0m0.179s
+56576603810
+
+MONGODB BYTES DIRECT: 93344
+MONGODB COUNT DIRECT: 1776
+MONGODB COUNT HTTP:   1776
+MONGODB TIMES HTTP:
+1776    time_namelookup:  0.000
+       time_connect:  0.161
+    time_appconnect:  0.000
+   time_pretransfer:  0.161
+      time_redirect:  0.000
+ time_starttransfer:  0.330
+                    ----------
+         time_total:  0.330
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+834984716
+590786460
+618873942
+
+real	1m16.314s
+user	0m0.408s
+sys	0m0.145s
+67971887732
+773214164
+903074876
+754525075
+688154284
+737552914
+941592786
+816654062
+695916583
+811513957
+750648857
+903092521
+805430428
+713901779
+793948817
+724313708
+836785777
+736817078
+725659204
+734988550
+733969167
+710337677
+1042574888
+753769564
+889849216
+736746716
+698144094
+735037472
+747227206
+879395348
+714791331
+754386487
+882887201
+777133869
+
+MONGODB BYTES DIRECT: 96944
+MONGODB COUNT DIRECT: 1851
+MONGODB COUNT HTTP:   no reachable servers on 54.251.233.108:27017
+MONGODB TIMES HTTP:
+no reachable servers on 54.251.233.108:27017    time_namelookup:  0.000
+       time_connect:  0.337
+    time_appconnect:  0.000
+   time_pretransfer:  0.337
+      time_redirect:  0.000
+ time_starttransfer:  20.677
+                    ----------
+         time_total:  20.677
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment1.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+762877266
+740486345
+691176825
+695794545
+748582195
+772716900
+773609831
+744082679
+714915262
+845750172
+761649563
+942233780
+729504418
+737615094
+825727792
+747699925
+712008107
+748921581
+767606456
+716254307
+723843690
+692643742
+
+real	1m24.367s
+user	0m0.247s
+sys	0m0.192s
+73781449259
+
+MONGODB BYTES DIRECT: 115184
+MONGODB COUNT DIRECT: 2231
+MONGODB COUNT HTTP:   no reachable servers on 145.100.108.226:27017
+MONGODB TIMES HTTP:
+no reachable servers on 145.100.108.226:27017    time_namelookup:  0.000
+       time_connect:  0.011
+    time_appconnect:  0.000
+   time_pretransfer:  0.011
+      time_redirect:  0.000
+ time_starttransfer:  5.530
+                    ----------
+         time_total:  5.530
+-----
+
+
+----------------------------------------
+ DATA INCREMENT OF: 20000 records (4K)
+
+
+real	0m55.601s
+user	0m0.649s
+sys	0m0.302s
+----------------------------------------
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment2.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <class 'flocker.volume.filesystems.interfaces.FilesystemAlreadyExists'>: 
+/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py:362:processEnded
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:70:connectionLost
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:423:errback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:490:_startRunCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:570:creation_failed
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": ["mongodb", "daffedummy"]\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '145.100.108.226'], 1, '')
+
+real	1m28.184s
+user	0m0.514s
+sys	0m0.152s
+36886295818
+
+MONGODB BYTES DIRECT: 81762960
+MONGODB COUNT DIRECT: 23221
+MONGODB COUNT HTTP:   23221
+MONGODB TIMES HTTP:
+23221    time_namelookup:  0.000
+       time_connect:  0.009
+    time_appconnect:  0.000
+   time_pretransfer:  0.009
+      time_redirect:  0.000
+ time_starttransfer:  0.022
+                    ----------
+         time_total:  0.022
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <class 'flocker.volume.filesystems.interfaces.FilesystemAlreadyExists'>: 
+/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py:362:processEnded
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:70:connectionLost
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:423:errback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:490:_startRunCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:570:creation_failed
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": ["mongodb", "daffedummy"]\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017, 42316, 42317]\n  version: 1\n145.100.108.227:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017, 41271, 41273]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '145.100.108.227'], 1, '')
+
+real	1m38.843s
+user	0m0.276s
+sys	0m0.181s
+90259997021
+513629705
+
+MONGODB BYTES DIRECT: 81784848
+MONGODB COUNT DIRECT: 23677
+MONGODB COUNT HTTP:   23677
+MONGODB TIMES HTTP:
+23677    time_namelookup:  0.000
+       time_connect:  0.031
+    time_appconnect:  0.000
+   time_pretransfer:  0.031
+      time_redirect:  0.000
+ time_starttransfer:  0.065
+                    ----------
+         time_total:  0.065
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+1517020246
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <class 'flocker.volume.filesystems.interfaces.FilesystemAlreadyExists'>: 
+/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py:362:processEnded
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:70:connectionLost
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:423:errback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:490:_startRunCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:570:creation_failed
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": ["mongodb", "daffedummy"]\n  "50.18.6.49": []\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017, 55448, 55449, 55450]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.170.150.234'], 1, '')
+
+real	1m11.461s
+user	0m0.334s
+sys	0m0.142s
+62937684668
+511090050
+
+MONGODB BYTES DIRECT: 81795840
+MONGODB COUNT DIRECT: 23906
+MONGODB COUNT HTTP:   23906
+MONGODB TIMES HTTP:
+23906    time_namelookup:  0.000
+       time_connect:  0.099
+    time_appconnect:  0.000
+   time_pretransfer:  0.100
+      time_redirect:  0.000
+ time_starttransfer:  0.315
+                    ----------
+         time_total:  0.315
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+527331836
+517770266
+1658898136
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <class 'flocker.volume.filesystems.interfaces.FilesystemAlreadyExists'>: 
+/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py:362:processEnded
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:70:connectionLost
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:423:errback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:490:_startRunCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:570:creation_failed
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": ["mongodb", "daffedummy"]\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017, 39914, 39915, 39916]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.166.35.73'], 1, '')
+
+real	1m20.802s
+user	0m0.306s
+sys	0m0.175s
+70726932210
+571082443
+1559601488
+668511381
+632034567
+527850498
+865494787
+624697981
+565699975
+531600114
+561218413
+
+MONGODB BYTES DIRECT: 81801696
+MONGODB COUNT DIRECT: 24028
+MONGODB COUNT HTTP:   24028
+MONGODB TIMES HTTP:
+24028    time_namelookup:  0.000
+       time_connect:  0.177
+    time_appconnect:  0.000
+   time_pretransfer:  0.177
+      time_redirect:  0.000
+ time_starttransfer:  0.357
+                    ----------
+         time_total:  0.357
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+661603275
+829789598
+587328690
+571964970
+1383894763
+561929836
+700662177
+735350541
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <class 'flocker.volume.filesystems.interfaces.FilesystemAlreadyExists'>: 
+/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py:362:processEnded
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:70:connectionLost
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:423:errback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:490:_startRunCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:570:creation_failed
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": ["mongodb", "daffedummy"]', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017, 54639]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '50.18.6.49'], 1, '')
+
+real	1m54.793s
+user	0m0.302s
+sys	0m0.171s
+106890892158
+711751793
+816424138
+928863608
+741251250
+711007215
+836275191
+695807089
+722507989
+699462785
+704876308
+727293660
+742510185
+705089414
+690126021
+744303736
+798143019
+765272840
+734350301
+919250724
+709108422
+702357374
+780385102
+691726206
+692799390
+785672798
+728583616
+913743130
+691307810
+733262942
+905027296
+707291900
+740941969
+714604470
+696109499
+800987048
+
+MONGODB BYTES DIRECT: 81805104
+MONGODB COUNT DIRECT: 24099
+MONGODB COUNT HTTP:   no reachable servers on 54.251.233.108:27017
+MONGODB TIMES HTTP:
+no reachable servers on 54.251.233.108:27017    time_namelookup:  0.000
+       time_connect:  0.339
+    time_appconnect:  0.000
+   time_pretransfer:  0.339
+      time_redirect:  0.000
+ time_starttransfer:  20.678
+                    ----------
+         time_total:  20.678
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment1.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+722700327
+743895097
+738720927
+784331285
+772759137
+711824764
+892329879
+738495397
+886931753
+706771527
+686690721
+889156773
+744820444
+694320236
+698011815
+686640559
+853081692
+687985623
+713008594
+729551263
+698824397
+729204629
+3248541016
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', 'fa99a747-c679-485f-b329-58cbef74d958', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', 'fa99a747-c679-485f-b329-58cbef74d958', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": ["mongodb", "daffedummy"]\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": []\n', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.251.233.108'], 1, '')
+
+real	1m43.054s
+user	0m0.375s
+sys	0m0.146s
+525184205
+
+MONGODB BYTES DIRECT: 81816384
+MONGODB COUNT DIRECT: 24334
+MONGODB COUNT HTTP:   no reachable servers on 145.100.108.226:27017
+MONGODB TIMES HTTP:
+no reachable servers on 145.100.108.226:27017    time_namelookup:  0.000
+       time_connect:  0.011
+    time_appconnect:  0.000
+   time_pretransfer:  0.011
+      time_redirect:  0.000
+ time_starttransfer:  5.539
+                    ----------
+         time_total:  5.539
+-----
+
+
+----------------------------------------
+ DATA INCREMENT OF: 200000 records (4K)
+
+
+real	11m3.782s
+user	0m10.462s
+sys	0m8.847s
+----------------------------------------
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment2.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+1068719972
+1071780091
+1102346729
+1069210243
+520359281
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '506d0b0b-9edb-45ed-85e6-f17a53d77e8e', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '506d0b0b-9edb-45ed-85e6-f17a53d77e8e', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": ["mongodb", "daffedummy"]\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '145.100.108.226'], 1, '')
+
+real	4m25.513s
+user	0m0.310s
+sys	0m0.175s
+
+MONGODB BYTES DIRECT: 81820272
+MONGODB COUNT DIRECT: 24415
+MONGODB COUNT HTTP:   24415
+MONGODB TIMES HTTP:
+24415    time_namelookup:  0.000
+       time_connect:  0.012
+    time_appconnect:  0.000
+   time_pretransfer:  0.012
+      time_redirect:  0.000
+ time_starttransfer:  0.025
+                    ----------
+         time_total:  0.025
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+11999128948
+1096533721
+1089095848
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '1ff853fa-b5ab-4dd7-9161-ec1227301967', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '1ff853fa-b5ab-4dd7-9161-ec1227301967', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": ["mongodb", "daffedummy"]\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017, 42329, 42330]\n  version: 1\n145.100.108.227:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017, 54402, 54404]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '145.100.108.227'], 1, '')
+
+real	1m24.923s
+user	0m0.505s
+sys	0m0.232s
+
+MONGODB BYTES DIRECT: 81831024
+MONGODB COUNT DIRECT: 24639
+MONGODB COUNT HTTP:   24639
+MONGODB TIMES HTTP:
+24639    time_namelookup:  0.000
+       time_connect:  0.031
+    time_appconnect:  0.000
+   time_pretransfer:  0.031
+      time_redirect:  0.000
+ time_starttransfer:  0.067
+                    ----------
+         time_total:  0.067
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+7795771182
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '91788e66-4808-4e61-9328-211b24078fd9', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '91788e66-4808-4e61-9328-211b24078fd9', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": ["mongodb", "daffedummy"]\n  "50.18.6.49": []\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017, 55457, 55458, 55459]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.170.150.234'], 1, '')
+
+real	1m21.102s
+user	0m0.302s
+sys	0m0.140s
+
+MONGODB BYTES DIRECT: 81816720
+MONGODB COUNT DIRECT: 24341
+MONGODB COUNT HTTP:   24341
+MONGODB TIMES HTTP:
+24341    time_namelookup:  0.000
+       time_connect:  0.096
+    time_appconnect:  0.000
+   time_pretransfer:  0.096
+      time_redirect:  0.000
+ time_starttransfer:  0.196
+                    ----------
+         time_total:  0.196
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+536701201
+548072363
+529218484
+527272438
+9212362581
+1542176083
+1364673330
+571644688
+628052282
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', 'c081fadf-872c-46b6-9cca-eb6eb87b5020', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', 'c081fadf-872c-46b6-9cca-eb6eb87b5020', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": ["mongodb", "daffedummy"]\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017, 39921, 39922, 39923]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.166.35.73'], 1, '')
+
+real	1m32.794s
+user	0m0.370s
+sys	0m0.111s
+537153861
+606208168
+751744304
+819602516
+
+MONGODB BYTES DIRECT: 81815808
+MONGODB COUNT DIRECT: 24322
+MONGODB COUNT HTTP:   24322
+MONGODB TIMES HTTP:
+24322    time_namelookup:  0.000
+       time_connect:  0.161
+    time_appconnect:  0.000
+   time_pretransfer:  0.161
+      time_redirect:  0.000
+ time_starttransfer:  0.325
+                    ----------
+         time_total:  0.325
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+10700226497
+735040145
+739196232
+728368936
+691784388
+702582842
+694544336
+743873875
+705349409
+720604981
+721415317
+695529568
+709705876
+747706365
+699096086
+699708761
+721415242
+732098005
+698223719
+735404429
+703572819
+736973280
+751375813
+689374211
+711520384
+722425179
+732869377
+701708901
+718618522
+743801845
+738300500
+694893126
+738559763
+747934187
+749849678
+689030306
+725730232
+703668176
+738622927
+709596012
+694591518
+732109794
+742048279
+719858318
+735652716
+720815840
+751443977
+701107223
+710604065
+735914264
+720779553
+697652762
+680792297
+776905602
+739580231
+709283159
+702568594
+735898645
+729190407
+702592806
+699368114
+713404707
+701000463
+692894149
+733926848
+704059329
+712886343
+762760224
+727140277
+700169907
+752930596
+702239916
+692177757
+687920340
+694018770
+712319316
+734625057
+725594856
+694534255
+755855795
+741399399
+682676163
+684375933
+721845447
+709324112
+727915918
+744170784
+735751434
+749513152
+699143247
+779535212
+713330095
+846453569
+754696194
+821866490
+733106133
+683209674
+1074600137
+916483278
+741122872
+707031859
+752574748
+792713165
+739653990
+733352228
+803257454
+712357220
+1061000317
+762746790
+689435331
+891938793
+785154718
+764021812
+776624307
+695809957
+858776328
+724291494
+729752698
+758335057
+692163061
+765710558
+742816461
+734333024
+977213388
+727307813
+807757898
+713576033
+690907366
+690454062
+678445440
+789976977
+858579380
+704282350
+885472146
+715176471
+730033550
+694405176
+704670107
+719352464
+812795136
+696100740
+916979754
+706707681
+673428088
+767396350
+720427271
+724476408
+746792085
+693549392
+732861794
+710196238
+766361306
+746453038
+683439031
+716005562
+742203660
+726380454
+807121789
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '2e06a6bf-0000-4aeb-bc46-fde3318dd20f', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '2e06a6bf-0000-4aeb-bc46-fde3318dd20f', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": ["mongodb", "daffedummy"]', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017, 54644, 54645, 54646]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '50.18.6.49'], 1, '')
+
+real	2m17.657s
+user	0m0.303s
+sys	0m0.151s
+721379194
+712344417
+870410238
+750176189
+699089757
+870530932
+707318214
+716820485
+695373271
+732106640
+846430645
+730420284
+678652267
+903774479
+731338743
+727728008
+685270169
+704974045
+813526321
+689005313
+691725670
+791656533
+740867776
+750877229
+833187554
+715524240
+826858479
+894904201
+740688761
+733413545
+713354929
+900715127
+738691592
+1261125932
+746284236
+730425146
+828911390
+694078840
+727379677
+
+MONGODB BYTES DIRECT: 81815664
+MONGODB COUNT DIRECT: 24319
+MONGODB COUNT HTTP:   no reachable servers on 54.251.233.108:27017
+MONGODB TIMES HTTP:
+no reachable servers on 54.251.233.108:27017    time_namelookup:  0.000
+       time_connect:  0.344
+    time_appconnect:  0.000
+   time_pretransfer:  0.344
+      time_redirect:  0.000
+ time_starttransfer:  20.921
+                    ----------
+         time_total:  20.922
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment1.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+723727201
+724726357
+887607848
+702948443
+760889024
+862354296
+741955634
+960221150
+706521365
+711822006
+910622618
+702588784
+947436590
+746032140
+707697942
+736101629
+730911277
+733144593
+718801810
+745350193
+718202016
+702164760
+3469097196
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', 'fa99a747-c679-485f-b329-58cbef74d958', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', 'fa99a747-c679-485f-b329-58cbef74d958', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": ["mongodb", "daffedummy"]\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": []\n', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.251.233.108'], 1, '')
+
+real	0m53.077s
+user	0m0.324s
+sys	0m0.142s
+
+MONGODB BYTES DIRECT: 897990320
+MONGODB COUNT DIRECT: 227955
+MONGODB COUNT HTTP:   no reachable servers on 145.100.108.226:27017
+MONGODB TIMES HTTP:
+no reachable servers on 145.100.108.226:27017    time_namelookup:  0.000
+       time_connect:  0.012
+    time_appconnect:  0.000
+   time_pretransfer:  0.012
+      time_redirect:  0.000
+ time_starttransfer:  5.537
+                    ----------
+         time_total:  5.537
+-----
+
+
+----------------------------------------
+ DATA INCREMENT OF: 2000000 records (4K)
+
+
+real	106m30.277s
+user	1m38.708s
+sys	1m26.277s
+----------------------------------------
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment2.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+602474467
+1439329255
+1380480205
+1175871303
+736571771
+530427797
+cannot create snapshots : out of space
+cannot receive: failed to read from stream
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 139, in maybeDeferred
+    result = f(*args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 297, in push
+    pushing = getting_snapshots.addCallback(got_snapshots)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 293, in got_snapshots
+    with fs.reader(snapshots) as contents:
+  File "/usr/lib64/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 252, in reader
+    check_call([b"zfs", b"snapshot", snapshot])
+  File "/usr/lib64/python2.7/subprocess.py", line 542, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['zfs', 'snapshot', 'flocker/506d0b0b-9edb-45ed-85e6-f17a53d77e8e.default.mongodb@2a30e43b-fd29-4427-a240-27f1f0a2234a']' returned non-zero exit status 1
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <class 'subprocess.CalledProcessError'>: Command '['zfs', 'snapshot', 'flocker/506d0b0b-9edb-45ed-85e6-f17a53d77e8e.default.mongodb@2a30e43b-fd29-4427-a240-27f1f0a2234a']' returned non-zero exit status 1
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:139:maybeDeferred
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:297:push
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:293:got_snapshots
+/usr/lib64/python2.7/contextlib.py:17:__enter__
+/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py:252:reader
+/usr/lib64/python2.7/subprocess.py:542:check_call
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": ["mongodb", "daffedummy"]\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '145.100.108.226'], 1, '')
+
+real	12m5.608s
+user	0m0.360s
+sys	0m0.165s
+
+MONGODB BYTES DIRECT: 81866352
+MONGODB COUNT DIRECT: 25375
+MONGODB COUNT HTTP:   25375
+MONGODB TIMES HTTP:
+25375    time_namelookup:  0.000
+       time_connect:  0.015
+    time_appconnect:  0.000
+   time_pretransfer:  0.016
+      time_redirect:  0.000
+ time_starttransfer:  0.028
+                    ----------
+         time_total:  0.028
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+7795454930
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '1ff853fa-b5ab-4dd7-9161-ec1227301967', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '1ff853fa-b5ab-4dd7-9161-ec1227301967', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": ["mongodb", "daffedummy"]\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017, 42341, 42342]\n  version: 1\n145.100.108.227:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017, 43927, 43929]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '145.100.108.227'], 1, '')
+
+real	0m33.282s
+user	0m0.335s
+sys	0m0.145s
+
+MONGODB BYTES DIRECT: 81854784
+MONGODB COUNT DIRECT: 25134
+MONGODB COUNT HTTP:   25134
+MONGODB TIMES HTTP:
+25134    time_namelookup:  0.000
+       time_connect:  0.029
+    time_appconnect:  0.000
+   time_pretransfer:  0.029
+      time_redirect:  0.000
+ time_starttransfer:  0.063
+                    ----------
+         time_total:  0.063
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+9195791584
+1247353570
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '91788e66-4808-4e61-9328-211b24078fd9', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '91788e66-4808-4e61-9328-211b24078fd9', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": ["mongodb", "daffedummy"]\n  "50.18.6.49": []\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017, 55466, 55467, 55468]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.170.150.234'], 1, '')
+
+real	0m34.512s
+user	0m0.343s
+sys	0m0.115s
+526598127
+
+MONGODB BYTES DIRECT: 81827712
+MONGODB COUNT DIRECT: 24570
+MONGODB COUNT HTTP:   24570
+MONGODB TIMES HTTP:
+24570    time_namelookup:  0.000
+       time_connect:  0.106
+    time_appconnect:  0.000
+   time_pretransfer:  0.106
+      time_redirect:  0.000
+ time_starttransfer:  0.216
+                    ----------
+         time_total:  0.217
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+529575322
+8656277356
+551436612
+554103746
+564553939
+564826219
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', 'c081fadf-872c-46b6-9cca-eb6eb87b5020', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', 'c081fadf-872c-46b6-9cca-eb6eb87b5020', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": ["mongodb", "daffedummy"]\n  "54.251.233.108": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017, 39928, 39929, 39930]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.166.35.73'], 1, '')
+
+real	0m35.468s
+user	0m0.309s
+sys	0m0.153s
+505893921
+566980211
+552454487
+566482659
+570004494
+508280200
+
+MONGODB BYTES DIRECT: 81823488
+MONGODB COUNT DIRECT: 24482
+MONGODB COUNT HTTP:   24482
+MONGODB TIMES HTTP:
+24482    time_namelookup:  0.000
+       time_connect:  0.158
+    time_appconnect:  0.000
+   time_pretransfer:  0.158
+      time_redirect:  0.000
+ time_starttransfer:  0.325
+                    ----------
+         time_total:  0.325
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+547711093
+526937713
+528133454
+557814557
+525110072
+516061024
+599870546
+12180831648
+718310516
+796720957
+796288662
+871285262
+690036663
+705039401
+730201875
+727497994
+710006564
+771305208
+739186595
+685018155
+753659622
+754682829
+734488189
+728883652
+723270338
+922739023
+706631383
+890138956
+693783051
+715221624
+708237086
+790071602
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/endpoints.py", line 362, in processEnded
+    return self.protocol.connectionLost(reason)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 70, in connectionLost
+    self._result.errback(CommandFailed())
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 423, in errback
+    self._startRunCallbacks(fail)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 490, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/filesystems/zfs.py", line 570, in creation_failed
+    raise FilesystemAlreadyExists()
+flocker.volume.filesystems.interfaces.FilesystemAlreadyExists: 
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 235, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 366, in handoff
+    changing_owner = pushing.addCallback(pushed)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 364, in pushed
+    remote_uuid = destination.acquire(volume)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py", line 144, in acquire
+    volume.name.to_bytes()]).decode("ascii")
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '2e06a6bf-0000-4aeb-bc46-fde3318dd20f', 'default.mongodb'], 1, '')
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: ('Bad exit', ['flocker-volume', '--config', '/etc/flocker/volume.json', 'acquire', '2e06a6bf-0000-4aeb-bc46-fde3318dd20f', 'default.mongodb'], 1, '')
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:235:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:366:handoff
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:364:pushed
+/usr/lib/python2.7/site-packages/flocker/volume/_ipc.py:144:acquire
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:90:get_output
+]]
+732016442
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": []\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": ["mongodb", "daffedummy"]', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017, 54652, 54653]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '50.18.6.49'], 1, '')
+
+real	0m42.526s
+user	0m0.301s
+sys	0m0.170s
+736431840
+747606869
+927541336
+723887242
+743744865
+804587778
+699556410
+684781067
+758779242
+909389667
+754026809
+716540493
+720669013
+783924010
+831266016
+903134042
+754280750
+842445595
+694546976
+709573603
+791297472
+721867765
+721553273
+1098555761
+755252420
+824315395
+736546233
+757387324
+841693017
+712211932
+738647645
+742927582
+791450188
+731561698
+813862030
+716829547
+777609161
+734590445
+
+MONGODB BYTES DIRECT: 81819840
+MONGODB COUNT DIRECT: 24406
+MONGODB COUNT HTTP:   no reachable servers on 54.251.233.108:27017
+MONGODB TIMES HTTP:
+no reachable servers on 54.251.233.108:27017    time_namelookup:  0.000
+       time_connect:  0.351
+    time_appconnect:  0.000
+   time_pretransfer:  0.351
+      time_redirect:  0.000
+ time_starttransfer:  20.710
+                    ----------
+         time_total:  20.710
+-----
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment1.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+678156591
+856265777
+728904751
+898462218
+710816239
+933329106
+699310776
+732999624
+949014395
+719387425
+702490007
+1548540169
+705201416
+744441043
+765309739
+1090426137
+716648518
+1037044175
+1480100136
+845339387
+692721477
+cannot receive incremental stream: out of space
+main function encountered error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/common/script.py", line 137, in main
+    self._react(self.script.main, (options,), _reactor=self._reactor)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/task.py", line 875, in react
+    finished = main(_reactor, *argv)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 469, in main
+    return self._volume_script.main(reactor, options, service)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/script.py", line 241, in main
+    return maybeDeferred(options.subOptions.run, service)
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 139, in maybeDeferred
+    result = f(*args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/script.py", line 123, in run
+    sys.stdin)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 322, in receive
+    writer.write(chunk)
+exceptions.IOError: [Errno 32] Broken pipe
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/flocker/node/_deploy.py", line 255, in run
+    RemoteVolumeManager(destination))
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 297, in push
+    pushing = getting_snapshots.addCallback(got_snapshots)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 306, in addCallback
+    callbackKeywords=kw)
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 295, in addCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/usr/lib64/python2.7/site-packages/twisted/internet/defer.py", line 577, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/site-packages/flocker/volume/service.py", line 295, in got_snapshots
+    receiver.write(chunk)
+  File "/usr/lib64/python2.7/contextlib.py", line 24, in __exit__
+    self.gen.next()
+  File "/usr/lib/python2.7/site-packages/flocker/common/_ipc.py", line 80, in run
+    raise IOError("Bad exit", remote_command, exit_code)
+exceptions.IOError: [Errno Bad exit] ['flocker-volume', '--config', '/etc/flocker/volume.json', 'receive', 'fa99a747-c679-485f-b329-58cbef74d958', 'default.mongodb']: 1
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback: <type 'exceptions.IOError'>: [Errno Bad exit] ['flocker-volume', '--config', '/etc/flocker/volume.json', 'receive', 'fa99a747-c679-485f-b329-58cbef74d958', 'default.mongodb']: 1
+/usr/lib/python2.7/site-packages/flocker/node/_deploy.py:255:run
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:297:push
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:306:addCallback
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:295:addCallbacks
+--- <exception caught here> ---
+/usr/lib64/python2.7/site-packages/twisted/internet/defer.py:577:_runCallbacks
+/usr/lib/python2.7/site-packages/flocker/volume/service.py:295:got_snapshots
+/usr/lib64/python2.7/contextlib.py:24:__exit__
+/usr/lib/python2.7/site-packages/flocker/common/_ipc.py:80:run
+]]
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n  "145.100.108.226": ["mongodb", "daffedummy"]\n  "145.100.108.227": []\n  "54.170.150.234": []\n  "54.166.35.73": []\n  "50.18.6.49": []\n  "54.251.233.108": []\n', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '145.100.108.226:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n145.100.108.227:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n50.18.6.49:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.166.35.73:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.170.150.234:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.251.233.108:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.251.233.108'], 1, '')
+
+real	0m29.014s
+user	0m0.310s
+sys	0m0.137s
+
+MONGODB BYTES DIRECT: Sun Mar 22 23:15:09.019 Error: couldn't connect to server 145.100.108.227:27017 at src/mongo/shell/mongo.js:147
+MONGODB COUNT DIRECT: Sun Mar 22 23:15:09.141 Error: couldn't connect to server 145.100.108.227:27017 at src/mongo/shell/mongo.js:147
+MONGODB COUNT HTTP:   no reachable servers on 145.100.108.226:27017
+MONGODB TIMES HTTP:
+no reachable servers on 145.100.108.226:27017    time_namelookup:  0.000
+       time_connect:  0.053
+    time_appconnect:  0.000
+   time_pretransfer:  0.053
+      time_redirect:  0.000
+ time_starttransfer:  5.648
+                    ----------
+         time_total:  5.648
+-----
+
+DAFFE TESTS DONE AT: Sun Mar 22 23:15:20 CET 2015
+

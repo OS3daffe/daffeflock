@@ -28,7 +28,7 @@ echo -e "\nSTARTING DAFFE TESTS AT: $(date)\n" > $LOG
 echo -e "NOTES:\n- nsec values is database downtime\n- min/sec value is migration duration\n- Application starts and ends at DAFFE1\n" >> $LOG
 
 # Start initial deployment to first server in Amsterdam
-flocker-deploy daffeflock-deployment1.yml daffeflock-application.yml
+flocker-deploy daffeflock-deployment2.yml daffeflock-application.yml
 
 # Loop data increments (approximations!!!)
 for records in 2 20000 200000 1000000; do
@@ -38,7 +38,7 @@ for records in 2 20000 200000 1000000; do
   echo -e "----------------------------------------\n" >> $LOG
 
   # Go around the world!
-  for deployment in daffeflock-deployment2.yml daffeflock-deployment3.yml daffeflock-deployment4.yml daffeflock-deployment5.yml daffeflock-deployment6.yml daffeflock-deployment1.yml; do
+  for deployment in daffeflock-deployment3.yml daffeflock-deployment4.yml daffeflock-deployment5.yml daffeflock-deployment6.yml daffeflock-deployment2.yml; do
     # Start by running timing script on MongoDB
     echo -e "----------------------------------------\n DEPLOYMENT: $deployment\n----------------------------------------" >> $LOG
     echo -e "MONGODB MIGRATION TIMINGS:" >> $LOG

@@ -1,0 +1,147 @@
+
+STARTING DAFFE TESTS AT: Tue Mar 24 14:52:36 CET 2015
+
+
+RECORDS: 400000
+
+NOTES:
+- nsec values is database downtime
+- min/sec value is migration duration
+- Application starts and ends at DAFFE2
+
+
+----------------------------------------
+ DATA INCREMENT OF: 400000 records (4K)
+
+
+real	7m37.960s
+user	0m13.262s
+sys	0m6.069s
+----------------------------------------
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+
+real	7m8.849s
+user	0m0.325s
+sys	0m0.157s
+422361449165
+
+MONGODB BYTES DIRECT: 1632021136
+MONGODB COUNT DIRECT: 400438
+MONGODB COUNT HTTP:   400438
+MONGODB TIMES HTTP:
+400438    time_namelookup:  0.000
+       time_connect:  0.019
+    time_appconnect:  0.000
+   time_pretransfer:  0.019
+      time_redirect:  0.000
+ time_starttransfer:  0.042
+                    ----------
+         time_total:  0.042
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+
+real	15m33.748s
+user	0m0.344s
+sys	0m0.187s
+64069516242
+
+MONGODB BYTES DIRECT: 1632533408
+MONGODB COUNT DIRECT: 411106
+MONGODB COUNT HTTP:   411106
+MONGODB TIMES HTTP:
+411106    time_namelookup:  0.000
+       time_connect:  0.087
+    time_appconnect:  0.000
+   time_pretransfer:  0.087
+      time_redirect:  0.000
+ time_starttransfer:  0.180
+                    ----------
+         time_total:  0.180
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+
+real	15m45.566s
+user	0m0.276s
+sys	0m0.229s
+939434942244
+
+MONGODB BYTES DIRECT: 1632539744
+MONGODB COUNT DIRECT: 411238
+MONGODB COUNT HTTP:   411238
+MONGODB TIMES HTTP:
+411238    time_namelookup:  0.000
+       time_connect:  0.144
+    time_appconnect:  0.000
+   time_pretransfer:  0.144
+      time_redirect:  0.000
+ time_starttransfer:  0.292
+                    ----------
+         time_total:  0.293
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+
+real	25m36.227s
+user	0m0.353s
+sys	0m0.153s
+1529650192896
+
+MONGODB BYTES DIRECT: 1632544304
+MONGODB COUNT DIRECT: 411333
+MONGODB COUNT HTTP:   411333
+MONGODB TIMES HTTP:
+411333    time_namelookup:  0.000
+       time_connect:  0.320
+    time_appconnect:  0.000
+   time_pretransfer:  0.320
+      time_redirect:  0.000
+ time_starttransfer:  0.645
+                    ----------
+         time_total:  0.645
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment2.yml
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+
+real	12m31.803s
+user	0m0.378s
+sys	0m0.118s
+
+MONGODB BYTES DIRECT: Tue Mar 24 16:21:05.966 Error: couldn't connect to server 145.100.108.227:27017 at src/mongo/shell/mongo.js:147
+MONGODB COUNT DIRECT: Tue Mar 24 16:21:06.021 Error: couldn't connect to server 145.100.108.227:27017 at src/mongo/shell/mongo.js:147
+MONGODB COUNT HTTP:   no reachable servers on 145.100.108.227:27017
+MONGODB TIMES HTTP:
+no reachable servers on 145.100.108.227:27017    time_namelookup:  0.000
+       time_connect:  0.001
+    time_appconnect:  0.000
+   time_pretransfer:  0.001
+      time_redirect:  0.000
+ time_starttransfer:  1.503
+                    ----------
+         time_total:  1.503
+-----
+
+DAFFE TESTS DONE AT: Tue Mar 24 16:21:09 CET 2015
+

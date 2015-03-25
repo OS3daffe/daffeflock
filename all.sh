@@ -13,10 +13,18 @@ MONGODB_COUNT_QUERY="db.dummy.count()"
 MONGODB_BYTES_QUERY="db.dummy.stats().size"
 INCREMENTS=( 2 20000 40000 60000 80000 100000 150000 200000 250000 300000 350000 400000 )
 APPLICATION=daffeflock-application.yml
+
+# 5 servers (incl. DAFFE2)
 INIT_IP_ADDRESS=145.100.108.227
 INIT_DEPLOYMENT=daffeflock-deployment2.yml
 LOOP_IP_ADDRESS=( "54.155.150.78" "54.161.128.65" "54.177.201.183" "54.179.230.106" "145.100.108.227" )
 LOOP_DEPLOYMENT=( daffeflock-deployment3.yml daffeflock-deployment4.yml daffeflock-deployment5.yml daffeflock-deployment6.yml daffeflock-deployment2.yml )
+
+# 4 servers
+INIT_IP_ADDRESS="54.155.150.78"
+INIT_DEPLOYMENT=daffeflock-deployment3.yml
+LOOP_IP_ADDRESS=( "54.161.128.65" "54.177.201.183" "54.179.230.106" "54.155.150.78" )
+LOOP_DEPLOYMENT=( daffeflock-deployment4.yml daffeflock-deployment5.yml daffeflock-deployment6.yml daffeflock-deployment3.yml )
 
 # Trap kill
 trap 'pkill -f mongotime.sh' EXIT

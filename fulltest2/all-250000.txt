@@ -1,0 +1,101 @@
+
+STARTING DAFFE TESTS AT: Wed Mar 25 03:49:38 CET 2015
+
+
+RECORDS: 250000
+
+NOTES:
+- nsec values is database downtime
+- min/sec value is migration duration
+- Application starts and ends at DAFFE2
+
+
+----------------------------------------
+ DATA INCREMENT OF: 250000 records (4K)
+
+818.64 seconds init
+----------------------------------------
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+ IP ADDRESS: 54.161.128.65
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+411.75 seconds migration
+33697970558 nsec DB downtime
+
+MONGODB BYTES DIRECT: 1020196128
+MONGODB COUNT DIRECT: 254080
+MONGODB COUNT HTTP:   254080
+MONGODB TIMES HTTP:   254080 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.117
+    time_appconnect:  0.000
+   time_pretransfer:  0.117
+      time_redirect:  0.000
+ time_starttransfer:  0.236
+                    ----------
+         time_total:  0.236
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+ IP ADDRESS: 54.177.201.183
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+519.48 seconds migration
+28574809890 nsec DB downtime
+
+MONGODB BYTES DIRECT: 1020288288
+MONGODB COUNT DIRECT: 256000
+MONGODB COUNT HTTP:   256000
+MONGODB TIMES HTTP:   256000 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.176
+    time_appconnect:  0.000
+   time_pretransfer:  0.176
+      time_redirect:  0.000
+ time_starttransfer:  0.356
+                    ----------
+         time_total:  0.356
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+ IP ADDRESS: 54.179.230.106
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+617.92 seconds migration
+34378600409 nsec DB downtime
+
+MONGODB BYTES DIRECT: 1020362880
+MONGODB COUNT DIRECT: 257554
+MONGODB COUNT HTTP:   257554
+MONGODB TIMES HTTP:   257554 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.365
+    time_appconnect:  0.000
+   time_pretransfer:  0.365
+      time_redirect:  0.000
+ time_starttransfer:  0.742
+                    ----------
+         time_total:  0.742
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+ IP ADDRESS: 54.155.150.78
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+Unhandled Error
+Traceback (most recent call last):
+Failure: flocker.volume.filesystems.zfs.CommandFailed: 
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback (failure with no frames): <class 'flocker.volume.filesystems.zfs.CommandFailed'>: 
+]]
+17980.90 seconds migration

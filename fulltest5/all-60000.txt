@@ -1,0 +1,112 @@
+
+STARTING DAFFE TESTS AT: Wed Mar 25 23:40:18 CET 2015
+
+
+RECORDS: 60000
+
+NOTES:
+- nsec values is database downtime
+- min/sec value is migration duration
+- Application starts and ends at DAFFE2
+
+
+----------------------------------------
+ DATA INCREMENT OF: 60000 records (4K)
+
+215.26 seconds init
+----------------------------------------
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+ IP ADDRESS: 54.161.128.65
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+186.10 seconds migration
+29436766464 nsec DB downtime
+
+MONGODB BYTES DIRECT: 244878608
+MONGODB COUNT DIRECT: 61633
+MONGODB COUNT HTTP:   61633
+MONGODB TIMES HTTP:   61633 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.119
+    time_appconnect:  0.000
+   time_pretransfer:  0.119
+      time_redirect:  0.000
+ time_starttransfer:  0.241
+                    ----------
+         time_total:  0.241
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+ IP ADDRESS: 54.177.201.183
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+116.37 seconds migration
+27038934048 nsec DB downtime
+
+MONGODB BYTES DIRECT: 244898384
+MONGODB COUNT DIRECT: 62045
+MONGODB COUNT HTTP:   62045
+MONGODB TIMES HTTP:   62045 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.262
+    time_appconnect:  0.000
+   time_pretransfer:  0.262
+      time_redirect:  0.000
+ time_starttransfer:  0.443
+                    ----------
+         time_total:  0.443
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+ IP ADDRESS: 54.179.230.106
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+230.29 seconds migration
+
+MONGODB BYTES DIRECT: Wed Mar 25 23:55:43.017 Error: couldn't connect to server 54.179.230.106:27017 at src/mongo/shell/mongo.js:147
+MONGODB COUNT DIRECT: Wed Mar 25 23:55:43.418 Error: couldn't connect to server 54.179.230.106:27017 at src/mongo/shell/mongo.js:147
+MONGODB COUNT HTTP:   no reachable servers on 54.179.230.106:27017
+MONGODB TIMES HTTP:   no reachable servers on 54.179.230.106:27017 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.376
+    time_appconnect:  0.000
+   time_pretransfer:  0.376
+      time_redirect:  0.000
+ time_starttransfer:  2.466
+                    ----------
+         time_total:  2.466
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+ IP ADDRESS: 54.155.150.78
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+208050234455 nsec DB downtime
+1256.39 seconds migration
+825291006866 nsec DB downtime
+
+MONGODB BYTES DIRECT: 244938560
+MONGODB COUNT DIRECT: 62882
+MONGODB COUNT HTTP:   62882
+MONGODB TIMES HTTP:   62882 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.031
+    time_appconnect:  0.000
+   time_pretransfer:  0.031
+      time_redirect:  0.000
+ time_starttransfer:  0.067
+                    ----------
+         time_total:  0.067
+-----
+
+DAFFE TESTS DONE AT: Thu Mar 26 00:17:25 CET 2015
+

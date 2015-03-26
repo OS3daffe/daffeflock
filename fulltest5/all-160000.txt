@@ -1,0 +1,130 @@
+
+STARTING DAFFE TESTS AT: Thu Mar 26 02:10:40 CET 2015
+
+
+RECORDS: 160000
+
+NOTES:
+- nsec values is database downtime
+- min/sec value is migration duration
+- Application starts and ends at DAFFE2
+
+
+----------------------------------------
+ DATA INCREMENT OF: 160000 records (4K)
+
+541.40 seconds init
+----------------------------------------
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+ IP ADDRESS: 54.161.128.65
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+336.95 seconds migration
+33162242043 nsec DB downtime
+
+MONGODB BYTES DIRECT: 652949600
+MONGODB COUNT DIRECT: 163111
+MONGODB COUNT HTTP:   163111
+MONGODB TIMES HTTP:   163111 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.117
+    time_appconnect:  0.000
+   time_pretransfer:  0.117
+      time_redirect:  0.000
+ time_starttransfer:  0.237
+                    ----------
+         time_total:  0.237
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+ IP ADDRESS: 54.177.201.183
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+269.89 seconds migration
+26072792066 nsec DB downtime
+
+MONGODB BYTES DIRECT: 652996784
+MONGODB COUNT DIRECT: 164094
+MONGODB COUNT HTTP:   164094
+MONGODB TIMES HTTP:   164094 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.182
+    time_appconnect:  0.000
+   time_pretransfer:  0.182
+      time_redirect:  0.000
+ time_starttransfer:  0.364
+                    ----------
+         time_total:  0.364
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+ IP ADDRESS: 54.179.230.106
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+490.88 seconds migration
+32640090236 nsec DB downtime
+
+MONGODB BYTES DIRECT: 653055392
+MONGODB COUNT DIRECT: 165315
+MONGODB COUNT HTTP:   165315
+MONGODB TIMES HTTP:   165315 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.365
+    time_appconnect:  0.000
+   time_pretransfer:  0.365
+      time_redirect:  0.000
+ time_starttransfer:  0.734
+                    ----------
+         time_total:  0.734
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+ IP ADDRESS: 54.155.150.78
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+Unhandled error in Deferred:
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 783, in __bootstrap
+    self.__bootstrap_inner()
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+--- <exception caught here> ---
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/threadpool.py", line 196, in _worker
+    result = context.call(ctx, function, *args, **kwargs)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 118, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/twisted/python/context.py", line 81, in callWithContext
+    return func(*args,**kw)
+  File "/home/thijs/Documents/Studie/LIA/flocker-tutorial/local/lib/python2.7/site-packages/flocker/common/_ipc.py", line 90, in get_output
+    raise IOError("Bad exit", remote_command, e.returncode, e.output)
+exceptions.IOError: ('Bad exit', ['flocker-changestate', '"version": 1\n"nodes":\n#  "145.100.108.226": []\n#  "145.100.108.227": []\n  "54.155.150.78": ["mongodb", "daffedummy"]\n  "54.161.128.65": []\n  "54.177.201.183": []\n  "54.179.230.106": []', '"version": 1\n"applications":\n  "mongodb":\n    "image": "daffe/mongodb"\n    "ports":\n     - "internal": 27017\n       "external": 27017\n    "volume":\n      "mountpoint": "/data/db"\n  "daffedummy":\n    "image": "daffe/daffedummy"\n    "environment":\n       "TEST_VARIABLE": "DAFFE1337"\n    "links":\n     - "local_port": 27017\n       "remote_port": 27017\n       "alias": "mongo"\n    "ports":\n     - "internal": 8080\n       "external": 8080\n', '54.155.150.78:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.161.128.65:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.177.201.183:\n  applications: {}\n  used_ports: [22, 8080, 27017]\n  version: 1\n54.179.230.106:\n  applications:\n    daffedummy:\n      image: daffe/daffedummy:latest\n      ports:\n      - {external: 8080, internal: 8080}\n    mongodb:\n      image: daffe/mongodb:latest\n      ports:\n      - {external: 27017, internal: 27017}\n      volume: {mountpoint: /data/db}\n  used_ports: [22, 8080, 27017]\n  version: 1\n', '54.155.150.78'], 255, '')
+357.81 seconds migration
+
+MONGODB BYTES DIRECT: 653076416
+MONGODB COUNT DIRECT: 165753
+MONGODB COUNT HTTP:   165753
+MONGODB TIMES HTTP:   165753 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.032
+    time_appconnect:  0.000
+   time_pretransfer:  0.032
+      time_redirect:  0.000
+ time_starttransfer:  0.064
+                    ----------
+         time_total:  0.064
+-----
+
+DAFFE TESTS DONE AT: Thu Mar 26 02:47:39 CET 2015
+

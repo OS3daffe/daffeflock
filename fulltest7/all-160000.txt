@@ -1,0 +1,110 @@
+
+STARTING DAFFE TESTS AT: Fri Mar 27 01:01:43 CET 2015
+
+
+RECORDS: 160000
+
+NOTES:
+- nsec values is database downtime
+- min/sec value is migration duration
+- Application starts and ends at DAFFE2
+
+
+----------------------------------------
+ DATA INCREMENT OF: 160000 records (4K)
+
+562.36 seconds init
+----------------------------------------
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+ IP ADDRESS: 54.161.128.65
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+474.67 seconds migration
+
+MONGODB BYTES DIRECT: Fri Mar 27 01:20:33.062 Error: couldn't connect to server 54.161.128.65:27017 at src/mongo/shell/mongo.js:147
+MONGODB COUNT DIRECT: Fri Mar 27 01:20:33.230 Error: couldn't connect to server 54.161.128.65:27017 at src/mongo/shell/mongo.js:147
+MONGODB COUNT HTTP:   no reachable servers on 54.161.128.65:27017
+MONGODB TIMES HTTP:   no reachable servers on 54.161.128.65:27017 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.117
+    time_appconnect:  0.000
+   time_pretransfer:  0.117
+      time_redirect:  0.000
+ time_starttransfer:  1.759
+                    ----------
+         time_total:  1.759
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+ IP ADDRESS: 54.177.201.183
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+928.29 seconds migration
+937015247087 nsec DB downtime
+
+MONGODB BYTES DIRECT: 653011904
+MONGODB COUNT DIRECT: 164409
+MONGODB COUNT HTTP:   164409
+MONGODB TIMES HTTP:   164409 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.176
+    time_appconnect:  0.000
+   time_pretransfer:  0.177
+      time_redirect:  0.000
+ time_starttransfer:  0.355
+                    ----------
+         time_total:  0.355
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+ IP ADDRESS: 54.179.230.106
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+2843.36 seconds migration
+172424669450 nsec DB downtime
+
+MONGODB BYTES DIRECT: 653339552
+MONGODB COUNT DIRECT: 171235
+MONGODB COUNT HTTP:   171235
+MONGODB TIMES HTTP:   171235 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.360
+    time_appconnect:  0.000
+   time_pretransfer:  0.360
+      time_redirect:  0.000
+ time_starttransfer:  0.737
+                    ----------
+         time_total:  0.737
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+ IP ADDRESS: 54.155.150.78
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+Unhandled Error
+Traceback (most recent call last):
+Failure: flocker.volume.filesystems.zfs.CommandFailed: 
+main function encountered error
+Traceback (most recent call last):
+Failure: twisted.internet.defer.FirstError: FirstError[#0, [Failure instance: Traceback (failure with no frames): <class 'flocker.volume.filesystems.zfs.CommandFailed'>: 
+]]
+5640595267 nsec DB downtime
+5816682766 nsec DB downtime
+6765404391 nsec DB downtime
+5279732929 nsec DB downtime
+5307091277 nsec DB downtime
+7259717437 nsec DB downtime
+5796480043 nsec DB downtime
+8781987228 nsec DB downtime
+7770093268 nsec DB downtime
+18543454047320 nsec DB downtime
+31388.34 seconds migration

@@ -1,0 +1,111 @@
+
+STARTING DAFFE TESTS AT: Sun Mar 29 16:49:29 CEST 2015
+
+
+RECORDS: 2
+
+NOTES:
+- nsec values is database downtime
+- min/sec value is migration duration
+- Application starts and ends at DAFFE2
+
+
+----------------------------------------
+ DATA INCREMENT OF: 2 records (4K)
+
+0.19 seconds init
+----------------------------------------
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment4.yml
+ IP ADDRESS: 54.145.165.251
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+66.31 seconds migration
+24971239692 nsec DB downtime
+
+MONGODB BYTES DIRECT: 28192
+MONGODB COUNT DIRECT: 419
+MONGODB COUNT HTTP:   419
+MONGODB TIMES HTTP:   419 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.119
+    time_appconnect:  0.000
+   time_pretransfer:  0.120
+      time_redirect:  0.000
+ time_starttransfer:  0.242
+                    ----------
+         time_total:  0.242
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment5.yml
+ IP ADDRESS: 54.177.53.81
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+63.05 seconds migration
+25561289705 nsec DB downtime
+
+MONGODB BYTES DIRECT: 37648
+MONGODB COUNT DIRECT: 616
+MONGODB COUNT HTTP:   616
+MONGODB TIMES HTTP:   616 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.175
+    time_appconnect:  0.000
+   time_pretransfer:  0.175
+      time_redirect:  0.000
+ time_starttransfer:  0.355
+                    ----------
+         time_total:  0.355
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment6.yml
+ IP ADDRESS: 175.41.186.101
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+110.73 seconds migration
+28436230846 nsec DB downtime
+
+MONGODB BYTES DIRECT: 49120
+MONGODB COUNT DIRECT: 855
+MONGODB COUNT HTTP:   855
+MONGODB TIMES HTTP:   855 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.358
+    time_appconnect:  0.000
+   time_pretransfer:  0.358
+      time_redirect:  0.000
+ time_starttransfer:  0.724
+                    ----------
+         time_total:  0.724
+-----
+
+
+----------------------------------------
+ DEPLOYMENT: daffeflock-deployment3.yml
+ IP ADDRESS: 54.247.130.237
+----------------------------------------
+MONGODB MIGRATION TIMINGS:
+516.34 seconds migration
+
+MONGODB BYTES DIRECT: 77600
+MONGODB COUNT DIRECT: 1448
+MONGODB COUNT HTTP:   1448
+MONGODB TIMES HTTP:   1448 count reported with connection timings:
+    time_namelookup:  0.000
+       time_connect:  0.032
+    time_appconnect:  0.000
+   time_pretransfer:  0.032
+      time_redirect:  0.000
+ time_starttransfer:  0.121
+                    ----------
+         time_total:  0.121
+-----
+
+DAFFE TESTS DONE AT: Sun Mar 29 17:05:48 CEST 2015
+

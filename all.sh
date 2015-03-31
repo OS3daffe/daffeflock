@@ -5,13 +5,15 @@
 #
 # TEST THE LIST OF SERVERS DEFINED BELOW WITH INCREASING DATABASE SIZES (1 RECORD = 4K)
 #
+# NOTE: remember to add Flocker to path:
+# set PATH $PATH ~/Documents/Studie/LIA/flocker-tutorial/bin
+#
 
 LOG_FORMAT=all-%d.txt             # %d = records
 URL_FORMAT=http://%s:8080/count   # %s = IP
 MONGODB_FORMAT=%s/daffe           # %s = IP
 MONGODB_COUNT_QUERY="db.dummy.count()"
 MONGODB_BYTES_QUERY="db.dummy.stats().size"
-INCREMENTS=( 2 20000 40000 60000 80000 100000 120000 140000 160000 180000 200000 )
 APPLICATION=daffeflock-application.yml
 
 # 5 servers (incl. DAFFE2)
@@ -25,6 +27,14 @@ INIT_IP_ADDRESS="54.155.150.78"
 INIT_DEPLOYMENT=daffeflock-deployment3.yml
 LOOP_IP_ADDRESS=( "54.161.128.65" "54.177.201.183" "54.179.230.106" "54.155.150.78" )
 LOOP_DEPLOYMENT=( daffeflock-deployment4.yml daffeflock-deployment5.yml daffeflock-deployment6.yml daffeflock-deployment3.yml )
+INCREMENTS=( 2 20000 40000 60000 80000 100000 120000 140000 160000 180000 200000 )
+
+# 4 new servers
+INIT_IP_ADDRESS="54.74.144.100"
+INIT_DEPLOYMENT=daffeflock-deployment3.yml
+LOOP_IP_ADDRESS=( "54.145.165.251" "54.177.53.81" "175.41.186.101" "54.74.144.100" )
+LOOP_DEPLOYMENT=( daffeflock-deployment4.yml daffeflock-deployment5.yml daffeflock-deployment6.yml daffeflock-deployment3.yml )
+INCREMENTS=( 500000 600000 700000 800000 900000 1000000 )
 
 # Trap kill
 trap 'pkill -f mongotime.sh' EXIT

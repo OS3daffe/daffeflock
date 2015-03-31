@@ -20,7 +20,7 @@ NOTES:
 ----------------------------------------
  DEPLOYMENT: daffeflock-deployment4.yml
  IP ADDRESS: 54.161.128.65
-----------------------------------------
+--------------------------2--------------
 MONGODB MIGRATION TIMINGS:
 102.61 seconds migration
 37009289630 nsec DB downtime

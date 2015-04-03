@@ -34,7 +34,7 @@ INIT_IP_ADDRESS="54.74.144.100"
 INIT_DEPLOYMENT=daffeflock-deployment3.yml
 LOOP_IP_ADDRESS=( "54.145.165.251" "54.177.53.81" "175.41.186.101" "54.74.144.100" )
 LOOP_DEPLOYMENT=( daffeflock-deployment4.yml daffeflock-deployment5.yml daffeflock-deployment6.yml daffeflock-deployment3.yml )
-INCREMENTS=( 500000 600000 700000 800000 900000 1000000 )
+INCREMENTS=( 100000 200000 300000 400000 500000 600000 700000 800000 900000 1000000 )
 
 # Trap kill
 trap 'pkill -f mongotime.sh' EXIT
